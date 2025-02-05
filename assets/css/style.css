@@ -223,3 +223,10 @@ nav .navbar-brand img{
     right: 0;
 }
 /* Banner End */
+
+/* About Start */
+.about{
+    padding: 5rem 2%;
+    background-color: #fff;
+}
+/* About End */
