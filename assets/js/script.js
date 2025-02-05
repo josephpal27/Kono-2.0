@@ -39,3 +39,13 @@ var textSwiper = new Swiper(".bannerTextSwiper", {
     speed: 800,
     allowTouchMove: false, // Disables touch movement
 });
+// ---------------------------------------------------------------------------
+
+document.querySelector('.about .about-lamp #lamp-1').addEventListener('mouseenter', () => {
+    document.querySelector('.about .about-lamp #lamp-2').classList.remove('hide');
+    document.querySelector('.about .about-lamp #lamp-1').classList.add('hide');
+})
+document.querySelector('.about .about-lamp #lamp-1').addEventListener('mouseleave', () => {
+    document.querySelector('.about .about-lamp #lamp-2').classList.add('hide');
+    document.querySelector('.about .about-lamp #lamp-1').classList.remove('hide');
+})

@@ -226,7 +226,72 @@ nav .navbar-brand img{
 
 /* About Start */
 .about{
-    padding: 5rem 2%;
+    /* padding: 0 2%; */
+    position: relative;
+    overflow: hidden;
+}
+.about #about-bg{
+    width: 100%;
+}
+.about-layer{
+    position: absolute;
+    top: 0;
+    width: 60%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    padding: 0 0 0 5%;
+    overflow: hidden;
+}
+.about-layer .about-desc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -1.2rem;
+    position: relative;
+}
+.about-layer .about-desc-left{
+    width: 15%;
+}
+.about-layer .about-desc-right{
+    width: 83%;
+}
+.about-layer h1{
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: calc(3.7rem + 1vw);
+    margin: 0;
+}
+.about-layer h2{
+    font-family: 'Montserrat-Thin', sans-serif;
+    font-size: calc(4rem + 1vw);
+    margin: 0;
+}
+.about-layer p{
+    font-family: 'GothamHTF-Light', sans-serif;
+    font-size: calc(0.3rem + 0.5vw);
+    margin-top: 2rem;
+}
+.about-layer .about-desc .line{
+    width: 25%;
+    height: 2.5px;
     background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+}
+.about .about-lamp{
+    position: absolute;
+    right: -15px;
+    top: 4rem;
+    width: 37%;
+}
+.about .about-lamp img{
+    width: 100%;
+}
+.about .lamp-box.hide{
+    display: none;
 }
 /* About End */
