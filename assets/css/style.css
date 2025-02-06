@@ -344,3 +344,82 @@ nav .navbar-brand img{
     font-size: calc(0.35rem + 0.5vw);
 }
 /* Our Mission End */
+
+/* Gallery Start */
+.gallery{
+    padding: 0 2%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.gallery-text{
+    width: 63%;
+    padding: 0 0 0.5rem 0;
+    position: relative;
+}
+.gallery-text h1{
+    font-size: calc(8.2rem + 1vw);
+    text-transform: uppercase;
+    background: url('../images/texture.png') repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+}
+.gallery-text .two-boxes{
+    position: relative;
+    height: 7rem;
+    margin-top: 6rem;
+}
+.gallery-text .two-boxes .box{
+    background-color: #1f1f1f9f;
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    right: 5rem;
+    top: 1.3rem;
+}
+.gallery-text .two-boxes #box-1{
+    right: 6.3rem;
+    top: 0;
+}
+.gallery-text .line{
+    width: 35%;
+    height: 3px;
+    background-color: #b5b5b5;
+    position: absolute;
+}
+.gallery-text #line-1{
+    top: 4rem;
+    right: 0;
+    width: 58%;
+}
+.gallery-text #line-2{
+    bottom: 1.5rem;
+    left: 9px;
+}
+
+.gallery-images{
+    width: 37%;
+    display: flex;
+    justify-content: space-between;
+}
+.gallery-images img{
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+.gallery-images-left,
+.gallery-images-right {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+}
+.gallery-images .img-box {
+    margin-bottom: 0.5rem;
+}
+.gallery-images .img-box:last-child {
+    margin-bottom: 0;
+}
+/* Gallery End */
