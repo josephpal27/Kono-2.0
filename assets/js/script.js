@@ -60,3 +60,49 @@ window.addEventListener('load', () => {
     lamp1.classList.remove('hide');
     lamp2.classList.add('hide');
 });
+
+// ---------------------------------------------------------------------------
+
+// Functionality for Gallery Section Image Toggle
+let imgBox1 = document.querySelector('.gallery-images #img-box-1');
+let imgBox3 = document.querySelector('.gallery-images #img-box-3');
+let imgBox4 = document.querySelector('.gallery-images #img-box-4');
+let imgBox5 = document.querySelector('.gallery-images #img-box-5');
+
+let imgToggleBoxImages = document.querySelectorAll('.gallery-images #img-toggle-box img');
+
+let title1 = document.querySelector('#gallery-title-1');
+let title2 = document.querySelector('#gallery-title-2');
+
+imgBox1.addEventListener('click', () => {
+    imgToggleBoxImages.forEach((img) => {
+        img.classList.remove('show');
+    });
+    imgToggleBoxImages[1].classList.add('show');
+    title1.innerHTML = 'post';
+    title2.innerHTML = 'top';
+})
+imgBox3.addEventListener('click', () => {
+    imgToggleBoxImages.forEach((img) => {
+        img.classList.remove('show');
+    });
+    imgToggleBoxImages[2].classList.add('show');
+    title1.innerHTML = 'flood';
+    title2.innerHTML = 'light';
+})
+imgBox4.addEventListener('click', () => {
+    imgToggleBoxImages.forEach((img) => {
+        img.classList.remove('show');
+    });
+    imgToggleBoxImages[3].classList.add('show');
+    title1.innerHTML = 'spot';
+    title2.innerHTML = 'light';
+})
+imgBox5.addEventListener('click', () => {
+    imgToggleBoxImages.forEach((img) => {
+        img.classList.remove('show');
+    });
+    imgToggleBoxImages[4].classList.add('show');
+    title1.innerHTML = 'all';
+    title2.innerHTML = 'purpose';
+})

@@ -197,12 +197,12 @@ nav .navbar-brand img{
 }
 .bannerTextSwiper .swiper-slide h1{
     font-family: 'Montserrat-Medium', sans-serif;
-    font-size: calc(3.4rem + 1vw);
+    font-size: calc(2.5rem + 1vw);
     margin: 0;
 }
 .bannerTextSwiper .swiper-slide h2{
     font-family: 'Montserrat-Thin', sans-serif;
-    font-size: calc(3.4rem + 1vw);
+    font-size: calc(2.5rem + 1vw);
     text-shadow: 1px 3px 5px rgb(255, 255, 255);
     margin: 0;
 }
@@ -219,7 +219,7 @@ nav .navbar-brand img{
     height: 2.5px;
     background-color: #fff;
     position: absolute;
-    bottom: 15px;
+    bottom: 0;
     right: 0;
 }
 /* Banner End */
@@ -358,7 +358,7 @@ nav .navbar-brand img{
     position: relative;
 }
 .gallery-text h1{
-    font-size: calc(8.2rem + 1vw);
+    font-size: calc(6rem + 1vw);
     text-transform: uppercase;
     background: url('../images/texture.png') repeat;
     -webkit-background-clip: text;
@@ -396,7 +396,7 @@ nav .navbar-brand img{
     width: 58%;
 }
 .gallery-text #line-2{
-    bottom: 1.5rem;
+    bottom: 5.5rem;
     left: 9px;
 }
 
@@ -404,11 +404,8 @@ nav .navbar-brand img{
     width: 37%;
     display: flex;
     justify-content: space-between;
-}
-.gallery-images img{
-    width: 100%;
-    object-fit: cover;
-    height: auto;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
 }
 .gallery-images-left,
 .gallery-images-right {
@@ -421,5 +418,20 @@ nav .navbar-brand img{
 }
 .gallery-images .img-box:last-child {
     margin-bottom: 0;
+}
+.gallery-images img{
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    cursor: pointer;
+}
+.gallery-images img.dark{
+    filter: grayscale(100%);
+}
+#img-toggle-box img{
+    display: none;
+}
+#img-toggle-box img.show{
+    display: block;
 }
 /* Gallery End */
