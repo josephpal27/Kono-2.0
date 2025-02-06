@@ -41,11 +41,22 @@ var textSwiper = new Swiper(".bannerTextSwiper", {
 });
 // ---------------------------------------------------------------------------
 
-document.querySelector('.about .about-lamp #lamp-1').addEventListener('mouseenter', () => {
-    document.querySelector('.about .about-lamp #lamp-2').classList.remove('hide');
-    document.querySelector('.about .about-lamp #lamp-1').classList.add('hide');
-})
-document.querySelector('.about .about-lamp #lamp-1').addEventListener('mouseleave', () => {
-    document.querySelector('.about .about-lamp #lamp-2').classList.add('hide');
-    document.querySelector('.about .about-lamp #lamp-1').classList.remove('hide');
-})
+// Functionality for the lamp images
+const lamp1 = document.querySelector('.about .about-lamp #lamp-1');
+const lamp2 = document.querySelector('.about .about-lamp #lamp-2');
+
+document.querySelector('.about .about-lamp').addEventListener('mouseenter', () => {
+    lamp1.classList.add('hide');
+    lamp2.classList.remove('hide');
+});
+
+document.querySelector('.about .about-lamp').addEventListener('mouseleave', () => {
+    lamp1.classList.remove('hide');
+    lamp2.classList.add('hide');
+});
+
+// Ensure lamp 1 is visible on page load
+window.addEventListener('load', () => {
+    lamp1.classList.remove('hide');
+    lamp2.classList.add('hide');
+});
