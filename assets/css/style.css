@@ -235,7 +235,7 @@ nav .navbar-brand img{
 .about-layer{
     position: absolute;
     top: 0;
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     height: 100%;
     display: flex;
@@ -253,10 +253,10 @@ nav .navbar-brand img{
     position: relative;
 }
 .about-layer .about-desc-left{
-    width: 15%;
+    width: 20%;
 }
 .about-layer .about-desc-right{
-    width: 83%;
+    width: 78%;
 }
 .about-layer h1{
     font-family: 'Montserrat-Medium', sans-serif;
@@ -283,9 +283,9 @@ nav .navbar-brand img{
 }
 .about .about-lamp{
     position: absolute;
-    right: -15px;
-    top: 4rem;
-    width: 37%;
+    right: -25px;
+    top: 3rem;
+    width: 100%;
 }
 .about .about-lamp img{
     width: 100%;
