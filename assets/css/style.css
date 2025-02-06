@@ -440,3 +440,80 @@ nav .navbar-brand img{
     display: block;
 }
 /* Gallery End */
+
+/* Contact Start */
+.contact-bg{
+    background-image: url('../images/contact-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 4rem;
+}
+.contact{
+    padding: 0 2% 5rem 2%;
+}
+.contact h3,
+.contact h1,
+.contact p{
+    text-align: center;
+    color: #fff;
+}
+.contact h3{
+    font-family: 'GothamHTF-Book', sans-serif;
+    font-size: calc(0.8rem + 1vw);
+}
+.contact h1{
+    font-family: 'GothamHTF-Medium', sans-serif;
+    font-size: calc(1.1rem + 1vw);
+}
+.contact p{
+    font-family: 'GothamHTF-Book', sans-serif;
+    font-size: calc(0.05rem + 1vw);
+}
+.contact form{
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.contact form input,
+.contact form textarea{
+    width: 100%;
+    padding: 0.7rem 1rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    background-color: #2727277a;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat-Thin', sans-serif;
+    font-weight: 600 !important;
+    font-size: calc(0.45rem + 0.5vw);
+    transition: all 0.2s ease-in-out;
+}
+.contact form input:focus,
+.contact form textarea:focus{
+    background-color: #3939397a;
+}
+.contact form input::placeholder,
+.contact form textarea::placeholder{
+    color: #9a9a9a;
+}
+.contact form textarea{
+    min-height: 8rem;
+    max-height: 8rem;
+}
+.contact form textarea::-webkit-scrollbar{
+    display: none !important;
+}
+.contact form button{
+    padding: 0.6rem 0;
+    border: none;
+    color: #fff;
+    background-color: #25252566;
+    transition: all 0.2s ease-in-out;
+}
+.contact form button:hover{
+    background-color: #41414166;
+}
+/* Contact End */

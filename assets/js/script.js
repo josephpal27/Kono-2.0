@@ -20,7 +20,7 @@ var imageSwiper = new Swiper(".bannerImageSwiper", {
     },
     pagination: {
         el: '.swiper-pagination',
-        clickable: true,
+        clickable: false,
     },
     allowTouchMove: false, // Disable touch movement
 });
