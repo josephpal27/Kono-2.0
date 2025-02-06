@@ -171,6 +171,11 @@ nav .navbar-brand img{
 .bannerImageSwiper .swiper-slide img {
     display: block;
     width: 100%;
+    filter: grayscale(100%);
+    transition: all 0.2s ease;
+}
+.bannerImageSwiper .swiper-slide img:hover {
+    filter: grayscale(0);
 }
 .bannerImageSwiper .swiper-pagination-bullet {
     width: 10px;
