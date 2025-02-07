@@ -173,3 +173,11 @@ nav {
     background-size: cover;
 }
 /* Landscape End */
+
+/* Step Light Start */
+#step-light-bg{
+    background-image: url('../images/product/step-light-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Step Light End */
