@@ -64,54 +64,60 @@ window.addEventListener('load', () => {
 // ---------------------------------------------------------------------------
 
 // Functionality for Gallery Section Image Toggle
-let imgBox1 = document.querySelector('.gallery-images #img-box-1');
-let imgBox3 = document.querySelector('.gallery-images #img-box-3');
-let imgBox4 = document.querySelector('.gallery-images #img-box-4');
-let imgBox5 = document.querySelector('.gallery-images #img-box-5');
 
-let imgToggleBoxImages = document.querySelectorAll('.gallery-images #img-toggle-box img');
+let imgBoxImages = document.querySelectorAll('.gallery-images .img-box img');
 
 let title1 = document.querySelector('#gallery-title-1');
 let title2 = document.querySelector('#gallery-title-2');
 
-imgBox1.addEventListener('click', () => {
-    imgToggleBoxImages.forEach((img) => {
-        img.classList.remove('show');
+let galleryBtn = document.querySelector('.gallery-btn a');
+
+let imgBox1 = document.querySelector('.gallery-images #img-box-1');
+let imgBox2 = document.querySelector('.gallery-images #img-box-2');
+let imgBox3 = document.querySelector('.gallery-images #img-box-3');
+let imgBox4 = document.querySelector('.gallery-images #img-box-4');
+let imgBox5 = document.querySelector('.gallery-images #img-box-5');
+
+imgBoxImages.forEach((img) => {
+    img.addEventListener('click', () => {
+        imgBoxImages.forEach((otherImg) => {
+            otherImg.classList.add('dark');
+        });
+        img.classList.remove('dark');
     });
-    imgToggleBoxImages[1].classList.add('show');
+});
+
+imgBox1.addEventListener('click', () => {
     title1.innerHTML = 'post';
     title2.innerHTML = 'top';
+    galleryBtn.setAttribute('href', 'postlight.html');
+})
+imgBox2.addEventListener('click', () => {
+    title1.innerHTML = 'street';
+    title2.innerHTML = 'light';
+    galleryBtn.setAttribute('href', 'streetlight.html');
 })
 imgBox3.addEventListener('click', () => {
-    imgToggleBoxImages.forEach((img) => {
-        img.classList.remove('show');
-    });
-    imgToggleBoxImages[2].classList.add('show');
     title1.innerHTML = 'flood';
     title2.innerHTML = 'light';
+    galleryBtn.setAttribute('href', 'floodlight.html');
 })
 imgBox4.addEventListener('click', () => {
-    imgToggleBoxImages.forEach((img) => {
-        img.classList.remove('show');
-    });
-    imgToggleBoxImages[3].classList.add('show');
     title1.innerHTML = 'spot';
     title2.innerHTML = 'light';
+    galleryBtn.setAttribute('href', 'spotlight.html');
 })
 imgBox5.addEventListener('click', () => {
-    imgToggleBoxImages.forEach((img) => {
-        img.classList.remove('show');
-    });
-    imgToggleBoxImages[4].classList.add('show');
     title1.innerHTML = 'all';
-    title2.innerHTML = 'purpose';
+    title2.innerHTML = 'purpose ';
+    galleryBtn.setAttribute('href', 'allpurpose.html');
 })
+// ---------------------------------------------------------------------------
 
 
 
 
-
-
+// Functionality For Back to Top button
 let calcScrollValue = () => {
     let scrollProgress = document.getElementById("progress");
     let progressValue = document.getElementById("progress-value");
