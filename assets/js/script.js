@@ -90,27 +90,27 @@ imgBoxImages.forEach((img) => {
 imgBox1.addEventListener('click', () => {
     title1.innerHTML = 'post';
     title2.innerHTML = 'top';
-    galleryBtn.setAttribute('href', 'postlight.html');
+    galleryBtn.setAttribute('href', 'post-top.html');
 })
 imgBox2.addEventListener('click', () => {
     title1.innerHTML = 'street';
     title2.innerHTML = 'light';
-    galleryBtn.setAttribute('href', 'streetlight.html');
+    galleryBtn.setAttribute('href', 'street-light.html');
 })
 imgBox3.addEventListener('click', () => {
     title1.innerHTML = 'flood';
     title2.innerHTML = 'light';
-    galleryBtn.setAttribute('href', 'floodlight.html');
+    galleryBtn.setAttribute('href', 'flood-light.html');
 })
 imgBox4.addEventListener('click', () => {
     title1.innerHTML = 'spot';
     title2.innerHTML = 'light';
-    galleryBtn.setAttribute('href', 'spotlight.html');
+    galleryBtn.setAttribute('href', 'spot-light.html');
 })
 imgBox5.addEventListener('click', () => {
     title1.innerHTML = 'all';
     title2.innerHTML = 'purpose ';
-    galleryBtn.setAttribute('href', 'allpurpose.html');
+    galleryBtn.setAttribute('href', 'all-purpose.html');
 })
 // -------------------------------------------------------------------------------------------------------------------------------
 

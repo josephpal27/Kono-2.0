@@ -316,7 +316,7 @@ nav .navbar-brand img{
 /* Our Mission Start */
 .our-mission-bg{
     overflow: hidden;
-    background-image: url('../images/mission-bg.png');
+    background-image: url('../images/mission-bg.webp');
     background-size: cover;
     width: 100%;
 }
