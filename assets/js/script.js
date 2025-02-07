@@ -106,3 +106,31 @@ imgBox5.addEventListener('click', () => {
     title1.innerHTML = 'all';
     title2.innerHTML = 'purpose';
 })
+
+
+
+
+
+
+let calcScrollValue = () => {
+    let scrollProgress = document.getElementById("progress");
+    let progressValue = document.getElementById("progress-value");
+    let pos = document.documentElement.scrollTop;
+    let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrollValue = Math.round((pos * 100) / calcHeight);
+
+    if (pos > 300) {
+        scrollProgress.classList.add('show');
+    } else {
+        scrollProgress.classList.remove('show');
+    }
+
+    scrollProgress.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    scrollProgress.style.background = `conic-gradient(#fff ${scrollValue}%, #000 ${scrollValue}%)`;
+};
+
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;

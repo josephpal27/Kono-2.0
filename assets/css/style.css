@@ -631,26 +631,37 @@ footer{
 /* Footer End */
 
 
-/* .back-to-top {
+#progress {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-}
-.back-to-top button {
-    width: 30px;
+    bottom: -50px;
+    right: 10px;
     height: 30px;
-    border: 2px solid transparent;
+    width: 30px;
+    display: grid;
+    place-items: center;
     border-radius: 50%;
-    background-color: #000;
-    color: #fff;
-    font-size: calc(0.5rem + 0.5vw);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    transition: border-color 0.3s ease;
+    transition: all 0.5s ease-in-out;
+    background: conic-gradient(#fff 0%, #000 0%);
 }
-.back-to-top button.fill {
-    border-color: #f50000;
-} */
+#progress.show {
+    bottom: 15px;
+}
+#progress-value {
+    display: block;
+    height: 25px;
+    width: 25px;
+    background-color: #000;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #000000;
+    margin-top: 2.5px;
+    margin-left: 0.1px;
+}
+#progress-value i{
+    font-size: calc(0.3rem + 0.5vw);
+    color: #fff;
+}
