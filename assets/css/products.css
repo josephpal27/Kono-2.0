@@ -181,3 +181,11 @@ nav {
     background-size: cover;
 }
 /* Step Light End */
+
+/* All Purpose Start */
+#all-purpose-bg{
+    background-image: url('../images/product/all-purpose-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* All Purpose End */
