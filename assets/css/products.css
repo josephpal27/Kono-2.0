@@ -1,0 +1,175 @@
+/* Navbar Start */
+nav {
+    background: transparent !important;
+    position: absolute !important;
+    top: 0;
+    width: 100%;
+    z-index: 100 !important;
+}
+/* Navbar End */
+
+/* Banner Start */
+.product-banner{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.product-banner-left{
+    width: 50%;
+}
+.product-banner-left img{
+    width: 100%;
+}
+.product-banner-right{
+    width: 50%;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.product-banner-right h4{
+    font-family: 'Montserrat-Thin', sans-serif;
+    font-size: calc(0.9rem + 1vw);
+    margin: 0 0 0 0;
+    position: absolute;
+    top: 10.4rem;
+    left: 1rem;
+}
+.product-banner-right h1{
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: calc(3.5rem + 1vw);
+    margin: 4.38rem 0 0 -1.4rem;
+}
+.product-banner-right h1 span{
+    font-size: calc(12rem + 1vw);
+    font-family: 'Montserrat-Thin', sans-serif;
+    margin-right: -1rem;
+}
+.product-banner-right h2{
+    font-family: 'Montserrat-Thin', sans-serif;
+    font-size: calc(3.1rem + 1vw);
+    margin: -2.5rem 0 0 15rem;
+}
+.product-banner-right .banner-desc{
+    width: 100%;
+    margin-top: 2rem;
+    /* height: 50%; */
+    padding: 1rem 8rem 2rem 1.5rem;
+    background: linear-gradient(to right, #141414 10%, rgba(46, 46, 46, 0) 100%); 
+}
+.product-banner-right .banner-desc p{
+    margin: 0;
+    font-family: 'Montserrat-Thin', sans-serif;
+    font-size: calc(0.3rem + 1vw);
+}
+/* Banner End */
+
+/* Street Light Start */
+#street-light-bg{
+    background-image: url('../images/product/street-light-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product-container{
+    padding: 4rem 2% 4rem 2%;
+    overflow: hidden;
+}
+.product-container h1{
+    font-size: calc(6.2rem + 1vw);
+    text-transform: uppercase;
+    background: url('../images/texture.png') repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+    text-align: center;
+}
+.product-slider {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 4rem 4rem 4rem;
+    margin-top: 2rem;
+    overflow: hidden;
+    position: relative;
+}
+.swiper-wrapper {
+    display: flex;
+}
+.product-card {
+    color: #fff;
+    padding: 0.8rem;
+    background: #000000c1;
+    border-radius: 15px;
+    border: 1.3px solid #b4b4b4;
+    overflow: hidden;
+}
+.product-card img {
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    filter: grayscale(100%);
+    transition: all 0.3s ease-in-out;
+}
+.product-card img:hover {
+    filter: grayscale(0);
+}
+.product-card h3 {
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: calc(0.25rem + 1vw);
+    margin-top: 1rem;
+    font-weight: 600;
+}
+.product-card p {
+    font-family: 'Montserrat-Thin', sans-serif;
+    font-size: calc(0.22rem + 0.5vw);
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+/* Swiper Navigation */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff;
+    position: absolute;
+    top: 47%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+.swiper-button-next {
+    right: 0;
+}
+.swiper-button-prev {
+    left: 0;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 20px;
+}
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 3px;
+    background-color: rgb(87, 87, 87);
+    border-radius: 5px;
+    opacity: 1;
+    transition: all 0.4s ease-in-out;;
+}
+.swiper-pagination-bullet-active {
+    background-color: #c7c7c7;
+    width: 20px;
+}
+/* Street Light End */
+
+/* Landscape Start */
+#landscape-bg{
+    background-image: url('../images/product/landscape-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Landscape End */
