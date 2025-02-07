@@ -189,3 +189,11 @@ nav {
     background-size: cover;
 }
 /* All Purpose End */
+
+/* Street Architectural Start */
+#street-architectural-bg{
+    background-image: url('../images/product/street-architect.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Street Architectural End */
