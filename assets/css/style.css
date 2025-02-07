@@ -77,10 +77,19 @@ nav .navbar-brand img{
     box-shadow: rgba(215, 215, 215, 0.453) 0px 3px 8px;
 }
 .navbar-nav .dropdown-item {
-    color: #fff !important;
+    color: #dadada !important;
 }
 .navbar-nav .dropdown-item:hover {
-    background-color: #222;
+    background-color: #000;
+    color: #fff !important;
+}
+.product-dropdown-menu{
+    width: 10% !important;
+    margin-left: -2rem !important;
+}
+.product-dropdown-menu a{
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: calc(0.35rem + 0.5vw);
 }
 
 /* Custom dropdown menu width */
