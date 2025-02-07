@@ -142,13 +142,13 @@ window.onload = calcScrollValue;
 // Function to handle smooth scrolling with Lenis on clicking Nav Links
 document.querySelectorAll('a.nav-link').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
         const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-
-        if (targetElement) {
-            lenis.scrollTo(targetElement);
+        if (targetId === '#about' || targetId === '#contact') {
+            e.preventDefault();
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                lenis.scrollTo(targetElement);
+            }
         }
     });
 });
