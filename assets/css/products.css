@@ -197,3 +197,11 @@ nav {
     background-size: cover;
 }
 /* Street Architectural End */
+
+/* Street Architectural Start */
+#flood-light-bg{
+    background-image: url('../images/product/flood-light-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Street Architectural End */
