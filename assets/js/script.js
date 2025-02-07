@@ -25,7 +25,7 @@ var imageSwiper = new Swiper(".bannerImageSwiper", {
     allowTouchMove: false, // Disable touch movement
 });
 
-// ---------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------
 
 // Functionality for the banner text slider
 var textSwiper = new Swiper(".bannerTextSwiper", {
@@ -39,7 +39,7 @@ var textSwiper = new Swiper(".bannerTextSwiper", {
     speed: 800,
     allowTouchMove: false, // Disables touch movement
 });
-// ---------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------
 
 // Functionality for the lamp images
 const lamp1 = document.querySelector('.about .about-lamp #lamp-1');
@@ -61,7 +61,7 @@ window.addEventListener('load', () => {
     lamp2.classList.add('hide');
 });
 
-// ---------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------
 
 // Functionality for Gallery Section Image Toggle
 
@@ -112,10 +112,7 @@ imgBox5.addEventListener('click', () => {
     title2.innerHTML = 'purpose ';
     galleryBtn.setAttribute('href', 'allpurpose.html');
 })
-// ---------------------------------------------------------------------------
-
-
-
+// -------------------------------------------------------------------------------------------------------------------------------
 
 // Functionality For Back to Top button
 let calcScrollValue = () => {
@@ -140,3 +137,18 @@ let calcScrollValue = () => {
 
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
+// -------------------------------------------------------------------------------------------------------------------------------
+
+// Function to handle smooth scrolling with Lenis on clicking Nav Links
+document.querySelectorAll('a.nav-link').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            lenis.scrollTo(targetElement);
+        }
+    });
+});
