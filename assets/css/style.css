@@ -240,6 +240,46 @@ nav .navbar-brand img{
     bottom: 0;
     right: 0;
 }
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1260px) and (max-width: 1399px){
+    .banner{
+        padding: 2.5rem 2% 3.5rem 2%;
+    }
+    .bannerTextSwiper .swiper-slide .banner-text-head .line{
+        width: 35%;
+        right: 2px;
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .banner{
+        padding: 2rem 1.5% 4rem 1.5%;
+    }
+    .bannerImageSwiper {
+        padding: 2rem 0 9rem 0;
+    }
+    .bannerImageSwiper .swiper-slide {
+        width: 325px;
+        height: 325px;
+    }
+    .bannerTextSwiper .swiper-slide .banner-text-head .line{
+        width: 35%;
+        right: 2px;
+        bottom: -5px;
+    }
+    .bannerTextSwiper .swiper-slide h1{
+        font-size: calc(2.8rem + 1vw);
+    }
+    .bannerTextSwiper .swiper-slide h2{
+        font-size: calc(2.8rem + 1vw);
+    }
+    .bannerTextSwiper .swiper-slide p{
+        font-size: calc(0.4rem + 0.5vw);
+        margin-top: 2rem;
+    }
+}
 /* Banner End */
 
 /* About Start */
@@ -311,6 +351,32 @@ nav .navbar-brand img{
 .about .lamp-box.hide{
     display: none;
 }
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1260px) and (max-width: 1399px){
+    .about-layer{
+        padding: 0 0 0 8%;
+    }
+    .about-layer .about-desc .line{
+        width: 40%;
+        left: -25%;
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .about-layer{
+        padding: 0 0 0 7.5%;
+    }
+    .about-layer .about-desc .line{
+        width: 40%;
+        left: -25%;
+    }
+    .about-layer p{
+        font-size: calc(0.38rem + 0.5vw);
+        margin-top: 2rem;
+    }
+}
 /* About End */
 
 /* Our Mission Start */
@@ -360,6 +426,20 @@ nav .navbar-brand img{
 .mission-card p b{
     font-family: 'GothamHTF-Book', sans-serif;
     font-size: calc(0.35rem + 0.5vw);
+}
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1260px) and (max-width: 1399px){
+    .mission-cards-row{
+        padding: calc(6rem + 1vw) 2% calc(5rem + 1vw) 2%;
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .mission-cards-row{
+        padding: calc(6rem + 1vw) 1.5% calc(6rem + 1vw) 1.5%;
+    }
 }
 /* Our Mission End */
 
@@ -466,6 +546,36 @@ nav .navbar-brand img{
 .gallery-images img.dark{
     filter: grayscale(100%);
 }
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1260px) and (max-width: 1399px){
+    .gallery-text #line-2{
+        bottom: 6rem;
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .gallery-text{
+        width: 59%;
+    }
+    .gallery-images{
+        width: 41%;
+    }
+    .gallery-text .text-content{
+        margin-top: 3rem;
+    }
+    .gallery-text h1{
+        font-size: calc(6.5rem + 1vw);
+    }
+    .gallery-text #line-2{
+        bottom: 10rem;
+    }
+    .gallery-text button{
+        margin-top: 4rem;
+        font-size: calc(0.45rem + 0.5vw);
+    }
+}
 /* Gallery End */
 
 /* Contact Start */
@@ -546,6 +656,13 @@ nav .navbar-brand img{
 }
 .contact form button:hover{
     background-color: #41414166;
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .contact form button{
+        font-size: calc(0.47rem + 0.5vw);
+    }
 }
 /* Contact End */
 
@@ -654,6 +771,20 @@ footer{
 .footer-bottom .social-icons i{
     font-size: calc(0.5rem + 0.5vw);
 }
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1260px) and (max-width: 1399px){
+    footer{
+        padding: 2rem 0  1rem 0 !important;
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    footer{
+        padding: 3rem 1.5%  2rem 1.5% !important;
+    }
+}
 /* Footer End */
 
 /* Back to Top Start */
@@ -690,5 +821,21 @@ footer{
 .back-to-top #progress-value i{
     font-size: calc(0.3rem + 0.5vw);
     color: #fff;
+}
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1260px) and (max-width: 1399px){
+    .back-to-top #progress-value {
+        margin-top: 2.35px;
+        margin-left: 0;
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .back-to-top #progress-value {
+        margin-top: 2.82px;
+        margin-left: 0.4px;
+    }
 }
 /* Back to Top End */

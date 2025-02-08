@@ -66,6 +66,44 @@ nav {
     font-family: 'Montserrat-Thin', sans-serif;
     font-size: calc(0.3rem + 1vw);
 }
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1260px) and (max-width: 1399px){
+    .product-banner-right h4{
+        font-size: calc(1rem + 1vw);
+        top: 12.6rem;
+        left: 1.3rem;
+    }
+    .product-banner-right h1{
+        font-size: calc(3.8rem + 1vw);
+        margin: 6rem 0 0 -1.4rem;
+    }
+    .product-banner-right h1 span{
+        font-size: calc(13rem + 1vw);
+    }
+    .product-banner-right h2{
+        font-size: calc(3.4rem + 1vw);
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .product-banner-right h4{
+        font-size: calc(1.15rem + 1vw);
+        top: 14.3rem;
+        left: 1.3rem;
+    }
+    .product-banner-right h1{
+        font-size: calc(4.2rem + 1vw);
+        margin: 8rem 0 0 -1.4rem;
+    }
+    .product-banner-right h1 span{
+        font-size: calc(13.5rem + 1vw);
+    }
+    .product-banner-right h2{
+        font-size: calc(3.8rem + 1vw);
+    }
+}
 /* Banner End */
 
 /* Street Light Start */
@@ -176,11 +214,50 @@ nav {
     background-color: rgb(87, 87, 87);
     border-radius: 5px;
     opacity: 1;
-    transition: all 0.4s ease-in-out;;
+    transition: all 0.4s ease-in-out;
 }
 .swiper-pagination-bullet-active {
     background-color: #c7c7c7;
     width: 20px;
+}
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1260px) and (max-width: 1399px){
+    .product-container{
+        padding: 4rem 0 4rem 0;
+    }
+    .product-container h1{
+        font-size: calc(6.8rem + 1vw);
+    }
+    .product-slider {
+        padding: 0.5rem 3.5rem 4rem 3.5rem;
+        margin-top: 2rem;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+    width: 35px;
+    height: 35px;
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .product-container{
+        padding: 4rem 0 4rem 0;
+    }
+    .product-container h1{
+        font-size: calc(7.3rem + 1vw);
+    }
+    .product-slider {
+        padding: 0.5rem 4rem 4rem 4rem;
+        margin-top: 1rem;
+    }
+    .product-card p {
+        font-size: calc(0.25rem + 0.5vw);
+    }
+    .swiper-pagination-bullet {
+        height: 4px;
+    }
 }
 /* Street Light End */
 
