@@ -153,6 +153,23 @@ nav .navbar-brand img{
     .custom-dropdown-menu button {
         font-size: calc(0.6em + 1vw);
     }
+    .product-dropdown-menu{
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+    .product-dropdown-menu a{
+        font-size: calc(0.55rem + 0.5vw);
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .product-dropdown-menu{
+        width: 11rem !important;
+        margin-left: -2rem !important;
+    }
+    .product-dropdown-menu a{
+        font-size: calc(0.37rem + 0.5vw);
+    }
 }
 /* Navbar End */
 
