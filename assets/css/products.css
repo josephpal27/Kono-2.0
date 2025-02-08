@@ -132,9 +132,10 @@ nav {
 }
 .product-card h3 {
     font-family: 'Montserrat-Medium', sans-serif;
-    font-size: calc(0.25rem + 1vw);
+    font-size: calc(0.2rem + 1vw);
     margin-top: 1rem;
     font-weight: 600;
+    text-transform: uppercase;
 }
 .product-card p {
     font-family: 'Montserrat-Thin', sans-serif;
