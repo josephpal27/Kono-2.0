@@ -19,5 +19,15 @@ var swiper = new Swiper('.product-slider', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+        200: {
+            slidesPerView: 1,
+            spaceBetween: 90,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 70,
+        }
+    }
 });
 

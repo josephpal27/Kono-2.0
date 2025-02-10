@@ -90,6 +90,7 @@ nav .navbar-brand img{
 .product-dropdown-menu a{
     font-family: 'Montserrat-Medium', sans-serif;
     font-size: calc(0.35rem + 0.5vw);
+    font-weight: 700;
 }
 
 /* Custom dropdown menu width */
@@ -119,6 +120,15 @@ nav .navbar-brand img{
 }
 .custom-dropdown-menu button:hover {
     background-color: #f2f2f2;
+}
+
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -158,7 +168,7 @@ nav .navbar-brand img{
         margin-left: 0 !important;
     }
     .product-dropdown-menu a{
-        font-size: calc(0.55rem + 0.5vw);
+        font-size: calc(0.58rem + 0.5vw);
     }
 }
 
@@ -297,6 +307,49 @@ nav .navbar-brand img{
         margin-top: 2rem;
     }
 }
+/* For small screens */
+@media screen and (max-width: 768px) {
+    .banner{
+        flex-direction: column;
+        padding: 0 1rem;
+        overflow: hidden;
+    }
+    .banner-left{
+        width: 100%;
+        padding: 0;
+    }
+    .banner-right{
+        width: 100%;
+        padding: 1rem 0 2rem 0;
+    }
+    .bannerImageSwiper {
+        padding: 1rem 0 2.5rem 0;
+    }
+    .bannerImageSwiper .swiper-slide {
+        width: 38%;
+        height: auto;
+    }
+    .bannerImageSwiper .swiper-pagination-bullet {
+        width: 9px;
+    }
+    .bannerImageSwiper .swiper-pagination-bullet-active {
+        width: 17px;
+    }
+    .bannerTextSwiper .swiper-slide h1{
+        font-size: calc(2.1rem + 1vw);
+    }
+    .bannerTextSwiper .swiper-slide h2{
+        font-size: calc(2.1rem + 1vw);
+    }
+    .bannerTextSwiper .swiper-slide p{
+        font-size: calc(0.6rem + 0.5vw);
+        margin-top: 1.8rem;
+    }
+    .bannerTextSwiper .swiper-slide .banner-text-head .line{
+        width: 40%;
+        bottom: -3px;
+    }
+}
 /* Banner End */
 
 /* About Start */
@@ -394,6 +447,43 @@ nav .navbar-brand img{
         margin-top: 2rem;
     }
 }
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+    .about-layer{
+        width: 68%;
+        padding: 0 0 0 1rem;
+    }
+    .about-layer .about-desc{
+        margin-top: 0.2rem;
+        align-items: start;
+    }
+    .about-layer .about-desc-left{
+        width: 20%;
+    }
+    .about-layer .about-desc-right{
+        width: 78%;
+    }
+    .about-layer h1{
+        font-size: calc(2rem + 1vw);
+        margin-top: 1rem;
+    }
+    .about-layer h2{
+        font-size: calc(2rem + 1vw);
+        margin-top: -0.7rem;
+    }
+    .about-layer p{
+        font-size: calc(0.47rem + 0.5vw);
+        margin-top: 0;
+    }
+    .about-layer .about-desc .line{
+        bottom: 2.3rem;
+        left: -9%;
+    }
+    .about .about-lamp{
+        top: 0;
+    }
+}
 /* About End */
 
 /* Our Mission Start */
@@ -456,6 +546,39 @@ nav .navbar-brand img{
 @media screen and (min-width: 1400px) {
     .mission-cards-row{
         padding: calc(6rem + 1vw) 1.5% calc(6rem + 1vw) 1.5%;
+    }
+}
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+    .our-mission-bg{
+        background-position: center;
+    }
+    .mission-cards-row{
+        padding: calc(2.5rem + 1vw) 1rem;
+        flex-direction: column;
+
+    }
+    .mission-card{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .mission-card .card-body{
+        padding: 0.4rem 1rem 0 1rem;
+        margin-top: -0.3rem;
+    }
+    .mission-card h1{
+        font-size: calc(1.8rem + 1vw);
+    }
+    .mission-card h2{
+        font-size: calc(1.8rem + 1vw);
+    }
+    .mission-card p{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-top: 0.5rem;
+    }
+    .mission-card p b{
+        font-size: calc(0.55rem + 0.5vw);
     }
 }
 /* Our Mission End */
@@ -593,6 +716,63 @@ nav .navbar-brand img{
         font-size: calc(0.45rem + 0.5vw);
     }
 }
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+    .gallery{
+        padding: 0 1rem;
+        flex-direction: column;
+    }
+    .gallery-text{
+        width: 100%;
+        padding: 0;
+    }
+    .gallery-text .text-content{
+        margin-top: -0.5rem;
+    }
+    .gallery-text h1{
+        font-size: calc(3.2rem + 1vw);
+        margin-top: -0.7rem;
+    }
+    .gallery-text .two-boxes{
+        height: 3rem;
+        margin-top: 2.5rem;
+    }
+    .gallery-text .two-boxes .box{
+        width: 2.5rem;
+        height: 2.5rem;
+        right: 0;
+        top: 0.5rem;
+    }
+    .gallery-text .two-boxes #box-1{
+        right: 0.5rem;
+        top: 0;
+    }
+    .gallery-text #line-1{
+        top: 1.5rem;
+    }
+    .gallery-text #line-2{
+        bottom: 2.9rem;
+        left: 3px;
+    }
+    .gallery-text button{
+        margin-top: 1.5rem;
+        margin-left: 3px;
+        padding: 0.4rem 1.5rem 0.4rem 0.8rem;
+        font-size: calc(0.55rem + 0.5vw);
+    }
+    .gallery-text button i{
+        font-size: calc(0.4rem + 0.5vw);
+    }
+    .gallery-images{
+        width: 100%;
+        margin-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .gallery-images-left .img-box{
+        margin-bottom: 0.45rem;
+    }
+}
 /* Gallery End */
 
 /* Contact Start */
@@ -679,6 +859,42 @@ nav .navbar-brand img{
 @media screen and (min-width: 1400px) {
     .contact form button{
         font-size: calc(0.47rem + 0.5vw);
+    }
+}
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+    .contact-bg{
+        margin-top: 0;
+        background-position: bottom;
+    }
+    .contact{
+        padding: 2.5rem 0 3rem 0;
+    }
+    .contact h3{
+        font-size: calc(0.9rem + 1vw);
+    }
+    .contact h1{
+        font-size: calc(1rem + 1vw);
+    }
+    .contact p{
+        font-size: calc(0.6rem + 1vw);
+    }
+    .contact form{
+        width: 85%;
+    }
+    .contact form input,
+    .contact form textarea{
+        padding: 0.7rem 0.8rem;
+        margin-bottom: 0.7rem;
+        font-size: calc(0.65rem + 0.5vw);
+    }
+    .contact form textarea{
+        min-height: 6rem;
+        max-height: 6rem;
+    }
+    .contact form button{
+        font-size: calc(0.68rem + 0.5vw);
     }
 }
 /* Contact End */
@@ -802,6 +1018,71 @@ footer{
         padding: 3rem 1.5%  2rem 1.5% !important;
     }
 }
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+    footer{
+        padding: 1.2rem 1rem  1rem 1rem !important;
+    }
+    .footer-top{
+        flex-direction: column;
+        padding-bottom: 1.5rem;
+    }
+    .footer-top-left{
+        width: 100%;
+    }
+    .footer-top-left p{
+        font-size: calc(0.5rem + 1vw);
+    }
+    .footer-top-right{
+        width: 100%;
+    }
+    .footer-top-right h3{
+        font-size: calc(0.8rem + 1vw);
+        margin-top: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    .contact-box .contact-icon i{
+        margin-top: 0;
+        font-size: 0.9rem;
+    }
+    .contact-box .contact-desc p{
+        font-size: calc(0.6rem + 0.5vw);
+    }
+    .contact-box .contact-desc a{
+        font-size: calc(0.6rem + 0.5vw);
+    }
+    #contact-box-1 i{
+        margin-top: 9px;
+    }
+    #contact-box-2 i{
+        margin-top: 9px;
+    }
+    #contact-box-3 p{
+        margin-top: 4px;
+    }
+    
+    .footer-bottom{
+        margin-top: 0.6rem;
+    }
+    .footer-bottom .copyright{
+        width: 70%;
+    }
+    .footer-bottom .copyright p{
+        font-size: calc(0.55rem + 0.5vw);
+    }
+    .footer-bottom .social-icons{
+        width: 30%;
+    }
+    .footer-bottom .social-icons a{
+        width: 1.7rem;
+        height: 1.8rem;
+        line-height: 1.7rem;
+    }
+    .footer-bottom .social-icons i{
+        font-size: calc(0.8rem + 0.5vw);
+    }
+}
 /* Footer End */
 
 /* Back to Top Start */
@@ -853,6 +1134,13 @@ footer{
     .back-to-top #progress-value {
         margin-top: 2.82px;
         margin-left: 0.4px;
+    }
+}
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+    .back-to-top {
+        display: none;
     }
 }
 /* Back to Top End */

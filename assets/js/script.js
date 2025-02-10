@@ -11,7 +11,7 @@ var imageSwiper = new Swiper(".bannerImageSwiper", {
         delay: 2000,
         disableOnInteraction: false,
     },
-    speed: 800,
+    speed: 900,
     coverflowEffect: {
         rotate: 0,
         stretch: 0,
@@ -36,7 +36,7 @@ var textSwiper = new Swiper(".bannerTextSwiper", {
         delay: 2000,
         disableOnInteraction: false,
     },
-    speed: 800,
+    speed: 900,
     allowTouchMove: false, // Disables touch movement
 });
 // -------------------------------------------------------------------------------------------------------------------------------

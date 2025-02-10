@@ -6,6 +6,21 @@ nav {
     width: 100%;
     z-index: 100 !important;
 }
+
+/* For Small Screens */
+@media screen and (max-width: 768px) {
+    nav .navbar-collapse {
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        margin-top: 0.2rem;
+        border-radius: 10px !important;
+    }
+    .product-dropdown-menu,
+    .custom-dropdown-menu{
+        width: 94% !important;
+        margin-left: 3% !important;
+    }
+}
 /* Navbar End */
 
 /* Banner Start */
@@ -102,6 +117,44 @@ nav {
     }
     .product-banner-right h2{
         font-size: calc(3.8rem + 1vw);
+    }
+}
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+    .product-banner{
+        flex-direction: column;
+    }
+    .product-banner-left{
+        width: 100%;
+    }
+    .product-banner-right{
+        width: 100%;
+        padding: 0 1rem;
+    }
+    .product-banner-right h4{
+        font-size: calc(0.85rem + 1vw);
+        top: 3.9rem;
+        left: 1.5rem;
+    }
+    .product-banner-right h1{
+        font-size: calc(2.5rem + 1vw);
+        margin: 0 0 0 -0.9rem;
+    }
+    .product-banner-right h1 span{
+        font-size: calc(8rem + 1vw);
+        margin-right: -0.7rem;
+    }
+    .product-banner-right h2{
+        font-size: calc(2.5rem + 1vw);
+        margin: -1.8rem 0 0 8rem;
+    }
+    .product-banner-right .banner-desc{
+        margin-top: 1rem;
+        padding: 0.5rem 0 0.5rem 0.5rem;
+    }
+    .product-banner-right .banner-desc p{
+        font-size: calc(0.5rem + 1vw);
     }
 }
 /* Banner End */
@@ -257,6 +310,54 @@ nav {
     }
     .swiper-pagination-bullet {
         height: 4px;
+    }
+}
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+    .product-light-bg{
+        margin-top: 1rem;
+    }
+    .product-container{
+        padding: 2.5rem 1rem 2rem 1rem;
+    }
+    .product-container h1{
+        font-size: calc(2.5rem + 1vw);
+    }
+    .product-slider {
+        padding: 0 4rem 3rem 4rem;
+        margin-top: 2rem;
+    }
+    .product-card {
+        padding: 0.5rem;
+        border-radius: 10px;
+    }
+    .product-card img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .product-card h3 {
+        font-size: calc(0.5rem + 1vw);
+        margin-top: 1rem;
+    }
+    .product-card p {
+        font-size: calc(0.32rem + 0.5vw);
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 30px;
+        height: 30px;
+    }
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 15px;
+    }
+    .swiper-pagination-bullet {
+        width: 8px;
+        height: 2.5px;
+    }
+    .swiper-pagination-bullet-active {
+        width: 14px;
     }
 }
 /* Street Light End */
