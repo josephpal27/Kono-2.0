@@ -418,6 +418,9 @@ nav .navbar-brand img{
 .about .about-lamp img{
     width: 100%;
 }
+.about #lamp-2 img{
+    margin-top: 1px;
+}
 .about .lamp-box.hide{
     display: none;
 }
@@ -589,6 +592,7 @@ nav .navbar-brand img{
     color: #fff;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 .gallery-text{
     width: 63%;
