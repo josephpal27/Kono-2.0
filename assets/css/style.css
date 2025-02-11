@@ -609,6 +609,10 @@ nav .navbar-brand img{
     color: transparent;
     margin: 0;
 }
+.gallery-text h1.hiddenText{
+    background: none;
+    color: #000;
+}
 .gallery-text .two-boxes{
     position: relative;
     height: 7rem;

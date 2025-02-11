@@ -91,26 +91,31 @@ imgBox1.addEventListener('click', () => {
     title1.innerHTML = 'post';
     title2.innerHTML = 'top';
     galleryBtn.setAttribute('href', 'post-top.html');
+    title1.classList.remove('hiddenText');
 })
 imgBox2.addEventListener('click', () => {
     title1.innerHTML = 'street';
     title2.innerHTML = 'light';
     galleryBtn.setAttribute('href', 'street-light.html');
+    title1.classList.remove('hiddenText');
 })
 imgBox3.addEventListener('click', () => {
     title1.innerHTML = 'flood';
     title2.innerHTML = 'light';
     galleryBtn.setAttribute('href', 'flood-light.html');
+    title1.classList.remove('hiddenText');
 })
 imgBox4.addEventListener('click', () => {
-    title1.innerHTML = 'spot';
-    title2.innerHTML = 'light';
-    galleryBtn.setAttribute('href', 'spot-light.html');
+    title1.innerHTML = '-';
+    title1.classList.add('hiddenText');
+    title2.innerHTML = 'facade';
+    galleryBtn.setAttribute('href', 'landscape.html');
 })
 imgBox5.addEventListener('click', () => {
     title1.innerHTML = 'all';
     title2.innerHTML = 'purpose ';
     galleryBtn.setAttribute('href', 'all-purpose.html');
+    title1.classList.remove('hiddenText');
 })
 // -------------------------------------------------------------------------------------------------------------------------------
 
