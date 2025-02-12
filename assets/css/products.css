@@ -174,7 +174,7 @@ nav {
     z-index: 0;
 }
 #street-light-bg{
-    background-image: url('../images/product/street-light-bg.png');
+    background-image: url('../images/product/street-light-bg.webp');
 }
 .product-container{
     padding: 4rem 2% 4rem 2%;
@@ -367,7 +367,7 @@ nav {
 
 /* Landscape Start */
 #landscape-bg{
-    background-image: url('../images/product/landscape-bg.png');
+    background-image: url('../images/product/landscape-bg.webp');
 }
 /* Landscape End */
 
@@ -379,24 +379,24 @@ nav {
 
 /* All Purpose Start */
 #all-purpose-bg{
-    background-image: url('../images/product/all-purpose-bg.png');
+    background-image: url('../images/product/all-purpose-bg.webp');
 }
 /* All Purpose End */
 
 /* Street Architectural Start */
 #street-architectural-bg{
-    background-image: url('../images/product/street-architectural-bg.png');
+    background-image: url('../images/product/street-architectural-bg.webp');
 }
 /* Street Architectural End */
 
 /* Flood Light Start */
 #flood-light-bg{
-    background-image: url('../images/product/flood-light-bg.png');
+    background-image: url('../images/product/flood-light-bg.webp');
 }
 /* Flood Light End */
 
 /* Post Top Start */
 #post-top-bg{
-    background-image: url('../images/product/post-top-bg.png');
+    background-image: url('../images/product/post-top-bg.webp');
 }
 /* Post Top End */
