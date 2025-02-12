@@ -205,8 +205,8 @@ nav .navbar-brand img{
 .bannerImageSwiper .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 270px;
-    height: 270px;
+    width: 272px;
+    height: 272px;
 }
 .bannerImageSwiper .swiper-slide img {
     display: block;
@@ -434,6 +434,9 @@ nav .navbar-brand img{
         width: 40%;
         left: -25%;
     }
+    .about #lamp-2 img{
+        margin-top: 1.5px;
+    }
 }
 
 /* For 100% in 15 inch screens */
@@ -448,6 +451,9 @@ nav .navbar-brand img{
     .about-layer p{
         font-size: calc(0.38rem + 0.5vw);
         margin-top: 2rem;
+    }
+    .about #lamp-2 img{
+        margin-top: 1.5px;
     }
 }
 
@@ -485,6 +491,9 @@ nav .navbar-brand img{
     }
     .about .about-lamp{
         top: 0;
+    }
+    .about #lamp-2 img{
+        margin-top: 0.5px;
     }
 }
 /* About End */
