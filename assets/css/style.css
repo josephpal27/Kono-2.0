@@ -978,6 +978,9 @@ footer{
     text-decoration: none;
     color: #fff;
 }
+#contact-box-1 i{
+    margin-top: 8px;
+}
 #contact-box-2 i{
     margin-top: 8px;
 }
@@ -1027,12 +1030,18 @@ footer{
     footer{
         padding: 2rem 0  1rem 0 !important;
     }
+    #contact-box-1 i{
+        margin-top: 7px;
+    }
 }
 
 /* For 100% in 15 inch screens */
 @media screen and (min-width: 1400px) {
     footer{
         padding: 3rem 1.5%  2rem 1.5% !important;
+    }
+    #contact-box-1 i{
+        margin-top: 5px;
     }
 }
 
