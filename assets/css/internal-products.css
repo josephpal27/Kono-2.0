@@ -1,0 +1,79 @@
+/* Navbar Start */
+nav {
+    background: transparent !important;
+    position: absolute !important;
+    top: 0;
+    width: 100%;
+    z-index: 100 !important;
+}
+
+/* For Small Screens */
+@media screen and (max-width: 768px) {
+    nav .navbar-collapse {
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        margin-top: 0.2rem;
+        border-radius: 10px !important;
+    }
+    .product-dropdown-menu,
+    .custom-dropdown-menu{
+        width: 94% !important;
+        margin-left: 3% !important;
+    }
+}
+/* Navbar End */
+
+
+/* Banner Start */
+.banner{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+.banner .left{
+    width: 61.7%;
+}
+.banner .right{
+    width: 38.3%;
+    position: relative;
+}
+.banner .right img{
+    width: 100%;
+}
+.banner .right .text-layer{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem;
+    color: #fff;
+}
+.banner .right .text-layer h1{
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: calc(3.5rem + 1vw);
+    margin-top: 4rem;
+}
+.banner .right .text-layer p{
+    font-family: 'Montserrat-Thin', sans-serif;
+    font-size: calc(0.55rem + 0.5vw);
+}
+
+.banner .toggle-imx-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.banner .toggle-imx-box img{
+    width: 85.2%;
+}
+.banner .toggle-imx-box img.hide{
+    display: none;
+}
+/* Banner End */
