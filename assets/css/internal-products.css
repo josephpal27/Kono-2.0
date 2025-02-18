@@ -33,6 +33,7 @@ nav {
 }
 .banner .left{
     width: 61.7%;
+    z-index: 10;
 }
 .banner .right{
     width: 38.3%;
