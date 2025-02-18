@@ -210,6 +210,7 @@ nav {
     border-radius: 15px;
     border: 1.3px solid #b4b4b4;
     overflow: hidden;
+    cursor: pointer;
 }
 .product-card img {
     width: 100%;
