@@ -77,4 +77,57 @@ nav {
 .banner .toggle-imx-box img.hide{
     display: none;
 }
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1260px) and (max-width: 1399px){
+    .banner .right .text-layer h1{
+        font-size: calc(4rem + 1vw);
+    }
+    .banner .right .text-layer p{
+        font-size: calc(0.65rem + 0.5vw);
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .banner .right .text-layer h1{
+        font-size: calc(4.5rem + 1vw);
+    }
+    .banner .right .text-layer p{
+        font-size: calc(0.75rem + 0.5vw);
+    }
+}
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+    .banner{
+        flex-direction: column;
+    }
+    .banner .left{
+        width: 100%;
+        margin-top: 18rem;
+    }
+    .banner .toggle-imx-box{
+        top: 2rem;
+        width: 100%;
+        height: auto;
+    }
+    .banner .toggle-imx-box img{
+        width: 100%;
+        margin-left: 24%;
+    }
+    .banner .right{
+        width: 100%;
+    }
+    .banner .right .text-layer{
+        padding: 0 1rem;
+    }
+    .banner .right .text-layer h1{
+        font-size: calc(3.5rem + 1vw);
+        margin-top: 0;
+    }
+    .banner .right .text-layer p{
+        font-size: calc(1rem + 0.5vw);
+    }
+}
 /* Banner End */
