@@ -13,6 +13,6 @@ document.querySelector('.banner .left').addEventListener('mouseleave', () => {
 
 // Ensure lamp 1 is visible on page load
 window.addEventListener('load', () => {
-    lightOff.classList.add('hide');
-    lightOn.classList.remove('hide');
+    lightOff.classList.remove('hide');
+    lightOn.classList.add('hide');
 });
