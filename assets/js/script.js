@@ -99,10 +99,24 @@ let imgBox5 = document.querySelector('.gallery-images #img-box-5');
 
 imgBoxImages.forEach((img) => {
     img.addEventListener('click', () => {
-        imgBoxImages.forEach((otherImg) => {
-            otherImg.classList.add('dark');
-        });
-        img.classList.remove('dark');
+        if (img.classList.contains('dark')) {
+            imgBoxImages.forEach((otherImg) => {
+                otherImg.classList.add('dark');
+            });
+            img.classList.remove('dark');
+        } else {
+            if (img === imgBox1.querySelector('img')) {
+                window.location.href = 'post-top.html';
+            } else if (img === imgBox2.querySelector('img')) {
+                window.location.href = 'street-light.html';
+            } else if (img === imgBox3.querySelector('img')) {
+                window.location.href = 'flood-light.html';
+            } else if (img === imgBox4.querySelector('img')) {
+                window.location.href = 'landscape.html';
+            } else if (img === imgBox5.querySelector('img')) {
+                window.location.href = 'all-purpose.html';
+            }
+        }
     });
 });
 
