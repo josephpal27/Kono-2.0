@@ -23,7 +23,26 @@ var imageSwiper = new Swiper(".bannerImageSwiper", {
         clickable: false,
     },
     allowTouchMove: false, // Disable touch movement
+    // on: {
+    //     slideChange: function () {
+    //         updateSlideStyles();
+    //     },
+    //     init: function () {
+    //         updateSlideStyles();
+    //     },
+    // },
 });
+
+// function updateSlideStyles() {
+//     const slides = document.querySelectorAll('.bannerImageSwiper .swiper-slide img');
+//     slides.forEach((slide) => {
+//         slide.classList.add('grayscale');
+//     });
+//     const activeSlide = document.querySelector('.bannerImageSwiper .swiper-slide-active img');
+//     if (activeSlide) {
+//         activeSlide.classList.remove('grayscale');
+//     }
+// }
 
 // -------------------------------------------------------------------------------------------------------------------------------
 
