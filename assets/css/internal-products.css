@@ -105,16 +105,15 @@ nav {
     }
     .banner .left{
         width: 100%;
-        margin-top: 18rem;
+        height: 25rem;
     }
     .banner .toggle-imx-box{
-        top: 2rem;
+        top: 0;
         width: 100%;
         height: auto;
     }
     .banner .toggle-imx-box img{
-        width: 100%;
-        margin-left: 24%;
+        width: 180%;
     }
     .banner .right{
         width: 100%;
@@ -128,6 +127,13 @@ nav {
     }
     .banner .right .text-layer p{
         font-size: calc(1rem + 0.5vw);
+    }
+}
+
+
+@media screen and (min-width: 390px) and (max-width: 450px) {
+    .banner .left{
+        height: 28rem;
     }
 }
 /* Banner End */
