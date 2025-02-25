@@ -16,3 +16,29 @@ window.addEventListener('load', () => {
     lightOff.classList.remove('hide');
     lightOn.classList.add('hide');
 });
+
+// -------------------------------------------------------------------------------------------------------------------------------
+
+// Initialize Swiper
+var swiper = new Swiper('.banner-product-slider', {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    autoPlay: false,
+    speed: 1000,
+    navigation: {
+        nextEl: '.swiper-button-next',
+    },
+    breakpoints: {
+        200: {
+            slidesPerView: 1,
+            spaceBetween: 50,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        }
+    }
+});

@@ -78,6 +78,28 @@ nav {
     display: none;
 }
 
+/* Banner Product Slider */
+.banner .banner-product-slider-box{
+    position: absolute;
+    bottom: 1.2rem;
+    left: 2rem;
+    width: 37%;
+}
+.banner .banner-product-slider-box .banner-product-slider{
+    overflow: hidden;
+}
+.banner .banner-product-slider-box img{
+    width: 90%;
+}
+.banner-product-slider-box .swiper-button-next{
+    color: #8c8c8c;
+    right: -3.5rem;
+}
+.banner-product-slider-box .swiper-button-next::after{
+    font-size: 35px;
+    font-weight: 1000;
+}
+
 /* For 110% in 15 inch screens */
 @media screen and (min-width: 1260px) and (max-width: 1399px){
     .banner .right .text-layer h1{
