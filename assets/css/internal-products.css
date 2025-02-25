@@ -83,13 +83,13 @@ nav {
     position: absolute;
     bottom: 1.2rem;
     left: 2rem;
-    width: 37%;
+    width: 35%;
 }
 .banner .banner-product-slider-box .banner-product-slider{
     overflow: hidden;
 }
 .banner .banner-product-slider-box img{
-    width: 90%;
+    width: 88%;
 }
 .banner-product-slider-box .swiper-button-next{
     color: #8c8c8c;
