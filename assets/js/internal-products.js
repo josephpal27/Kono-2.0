@@ -33,8 +33,8 @@ var swiper = new Swiper('.banner-product-slider', {
     },
     breakpoints: {
         200: {
-            slidesPerView: 1,
-            spaceBetween: 50,
+            slidesPerView: 3,
+            spaceBetween: 10,
         },
         768: {
             slidesPerView: 3,

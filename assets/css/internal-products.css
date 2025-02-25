@@ -108,6 +108,9 @@ nav {
     .banner .right .text-layer p{
         font-size: calc(0.65rem + 0.5vw);
     }
+    .banner-product-slider-box .swiper-button-next::after{
+        font-size: 37px;
+    }
 }
 
 /* For 100% in 15 inch screens */
@@ -117,6 +120,9 @@ nav {
     }
     .banner .right .text-layer p{
         font-size: calc(0.75rem + 0.5vw);
+    }
+    .banner-product-slider-box .swiper-button-next::after{
+        font-size: 40px;
     }
 }
 
@@ -150,12 +156,33 @@ nav {
     .banner .right .text-layer p{
         font-size: calc(1rem + 0.5vw);
     }
+
+    .banner .banner-product-slider-box{
+        bottom: 0;
+        top: 20rem;
+        left: 1rem;
+        width: 75%;
+    }
+    .banner .banner-product-slider-box img{
+        width: 100%;
+    }
+    .banner-product-slider-box .swiper-button-next{
+        color: #8c8c8c;
+        right: -3.5rem;
+        top: 2.5rem;
+    }
+    .banner-product-slider-box .swiper-button-next::after{
+        font-size: 25px;
+    }
 }
 
 
 @media screen and (min-width: 390px) and (max-width: 450px) {
     .banner .left{
         height: 28rem;
+    }
+    .banner .banner-product-slider-box{
+        top: 22rem;
     }
 }
 /* Banner End */
